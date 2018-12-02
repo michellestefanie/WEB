@@ -1,0 +1,97 @@
+
+/* algemeen */
+body {
+	font-family: helvetica, sans-serif;
+	background-color: #fff;
+	scroll-behavior: smooth;
+	margin: 0;
+
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ol, ul {
+	list-style: none;
+	display: flex;
+	justify-content: left;
+	align-items: left;
+
+}
+
+header img {
+  width: 3.3em;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: 1em;
+}
+
+/* tekst */
+
+h1 {
+	font-size: 1.3em;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: #99258d;
+	margin-left: 1em;
+	margin-bottom: 0;
+	padding: 0;
+
+}
+
+h2 {
+	font-size: 1.1em;
+	color: #2b4040;
+	margin-left: 1em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: lighter;
+	color: #2b4040;
+	margin-left: 1em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 1em;
+	color: #2b4040;
+	margin-left: 1em;
+	margin-top: 0;
+	padding: 0;
+}
+
+
+/* styling img */
+article img {
+	width: 15em;
+	display: block;
+	margin-left: 1em;
+	margin-right: auto;
+
+}
+
+nav {
+	background-color: #99258d;
+	top: 0;
+	width: 100%;
+}
+
+nav img {
+	width: 2em;
+	padding-right: 2em;
+	display: flex;
+	transition: all .3s;
+}
+
+form {
+	border-radius: ;
+}
