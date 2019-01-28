@@ -5,7 +5,6 @@ body {
 	background-color: #fff;
 	scroll-behavior: smooth;
 	margin: 0;
-
 }
 
 a {
@@ -15,43 +14,100 @@ a {
 
 ol, ul {
 	list-style: none;
+}
+
+/*header*/
+
+header nav ul {
+	background-color: #fff;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+	flex-direction: row;
+  justify-content: flex-end;
+	transition: all .3s;
+}
+
+nav {
+	border-bottom: 1em;
+}
+
+li:first-child {
+	margin-right: auto;
+}
+
+
+
+header nav img {
+	width: 1.5em;
+	padding-right: 1em;
+}
+
+header section {
 	display: flex;
-	justify-content: left;
-	align-items: left;
-
+	flex-direction: row;
+	justify-content: flex-start;
 }
 
-header img {
-  width: 3.3em;
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+header input {
+	height: 2em;
+	width: 50%;
 	margin-top: 1em;
+	margin-left: 1em;
+	color: #99258d;
+	background-color: #fff;
 }
 
+header button {
+	height: 2em;
+	width: 50%;
+	margin-top: 1em;
+	margin-left: 1em;
+	color: #99258d;
+	background-color: #fff;
+}
+
+header button:hover {
+	background-color: #99258d;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.Filters {
+	display: none;
+	padding: 0;
+	margin: 0;
+}
+
+.block {
+	display: block;
+}
 /* tekst */
 
-h1 {
-	font-size: 1.3em;
-	font-weight: lighter;
+/* h1 {
+	font-size: 1em;
+	font-weight: weight;
 	text-transform: uppercase;
 	color: #99258d;
 	margin-left: 1em;
 	margin-bottom: 0;
 	padding: 0;
 
-}
+} */
 
-h2 {
+/* h2 {
 	font-size: 1.1em;
 	color: #2b4040;
 	margin-left: 1em;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding: 0;
-}
+} */
 
-h3 {
+/* h3 {
 	font-size: 1em;
 	font-weight: lighter;
 	color: #2b4040;
@@ -59,39 +115,205 @@ h3 {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding: 0;
-}
-
-p {
-	font-size: 1em;
-	color: #2b4040;
-	margin-left: 1em;
-	margin-top: 0;
-	padding: 0;
-}
+} */
 
 
 /* styling img */
-article img {
+/* article img {
 	width: 15em;
 	display: block;
 	margin-left: 1em;
 	margin-right: auto;
 
+} */
+
+/* Home page verhalen */
+
+main section {
+  width: 100%;
+  /* display: grid; */
+  /* grid-template-columns: repeat(6, 1fr); */
+	margin-left: 5%;
 }
 
-nav {
-	background-color: #99258d;
-	top: 0;
-	width: 100%;
+main section p {
+	font-size: .8em;
+	color: #2b4040;
+	/* margin-left: .2em; */
+	margin: 1em 0;
 }
 
-nav img {
-	width: 2em;
-	padding-right: 2em;
+main section h1{
+	color: #99258d;
+	text-transform: uppercase;
+	margin: 2em 1em 1em;
+	font-size: 1em;
+}
+
+main section .verhalen article{
+	display: grid;
+	position: relative;
+	grid-template-columns: repeat(1, 1fr);
+	height: 10em;
+	width: 90%;
+  overflow: hidden;
+	margin-left: .2em;
+	margin-bottom: .3em;
+  /* align-items: flex-start;
+  /* justify-content: left; */ */
+  /* flex-wrap: wrap; */
+  transition: all .4s;
+
+}
+
+main section .verhalen a {
+  height: 100%;
+  width: 100%;
+}
+
+main section .verhalen img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  transition: all .6s;
+}
+
+/* main section article h1 {
+  color: #99258d;
+  font-size: .5em;
+	margin-left: 1em;
+	padding: 0;
+	border: none;
+  transform: translateY(-20px);
+  transition: all .5s;
+  transition-delay: .2s;
+} */
+
+/* main section article h2 {
+  color: #99258d;
+  font-size: 1em;
+	font-weight: bold;
+	margin-left: 1em;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all .5s;
+  transition-delay: .2s;
+
+} */
+
+main section .verhalen h3 {
 	display: flex;
-	transition: all .3s;
+	flex-direction: column;
+	justify-content: space-between;
+  color: #99258d;
+  font-size: .8em;
+	font-weight: 500;
+	margin-left: 1em;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all .5s;
+  transition-delay: .2s;
+	margin: .5em;
+
 }
 
-form {
-	border-radius: ;
+main section .verhalen h3:first-child {
+	border: none;
+	padding:0;
+	margin-bottom: 2em;
+}
+
+main section .verhalen img {
+	display: grid;
+	object-fit: cover;
+	object-position: top;
+	/* flex-direction: column;
+	justify-content: space-around; */
+}
+
+main section .verhalen button img{
+	width: 1em;
+	height: 1em;
+}
+
+
+
+/* main section article h4 {
+  color: #99258d;
+  font-size: 1em;
+	font-weight: 500;
+	margin-left: 1em;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all .5s;
+  transition-delay: .2s; */
+}
+
+main section article:hover {
+  background-color: rgb(255,255,255, 0.6);
+}
+
+main section article:hover h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+main section article:hover a img {
+  transform: translateY(-10%);
+	z-index: -10;
+}
+
+
+/* Footer */
+footer {
+  background-color: #F4EEE8;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 1em 10%;
+ }
+
+/*Responsive website */
+
+/* Breakpoint 1 Tablet */
+@media (min-width: 30em) {
+  main section .verhalen {
+		display: grid;
+    grid-template-columns: repeat(3, 1fr);
+		max-width: 90%;
+		margin:0;
+  }
+
+	main section .verhalen article {
+		width: 100%;
+		height: 13em;
+	}
+
+	main section .verhalen img {
+		width: 100%;
+		height: 100%;
+		margin: .5em;
+	}
+
+	main section .verhalen h3 {
+		margin-left: 1em;
+}
+
+/* Breakpoint 2 Desktop */
+@media (min-width: 60em) {
+main section .verhalen {
+		display: grid;
+    grid-template-columns: repeat(6, 1fr);
+		max-width: 90%;
+		margin: 0;
+  }
 }

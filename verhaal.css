@@ -1,0 +1,195 @@
+
+/* algemeen */
+body {
+	font-family: helvetica, sans-serif;
+	background-color: #fff;
+	scroll-behavior: smooth;
+	margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/*header*/
+
+header nav ul {
+	background-color: #fff;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+	flex-direction: row;
+  justify-content: flex-end;
+	transition: all .3s;
+}
+
+nav {
+	border-bottom: 1em;
+}
+
+li:first-child {
+	margin-right: auto;
+}
+
+
+
+header nav img {
+	width: 1.5em;
+	padding-right: 1em;
+}
+
+header section {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+
+header input {
+	height: 2em;
+	width: 50%;
+	margin-top: 1em;
+	margin-left: 1em;
+	color: #99258d;
+	background-color: #fff;
+}
+
+header button {
+	height: 2em;
+	width: 50%;
+	margin-top: 1em;
+	margin-left: 1em;
+	color: #99258d;
+	background-color: #fff;
+}
+
+header button:hover {
+	background-color: #99258d;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.Filters {
+	display: none;
+	padding: 0;
+	margin: 0;
+}
+
+.block {
+	display: block;
+}
+
+main .verhaal img {
+  width: 100%;
+  margin-top: 10em;
+}
+
+/* Button review plaatsen */
+.scroll {
+  background-color: #edce5a;
+  color: #8e1f81;
+  width: 40%;
+  height: 3em;
+  border-radius: .2em;
+  margin: 1% 10% 3% ;
+  position: absolute;
+  left: 0;
+}
+
+.verhaal {
+  display: block;
+}
+
+/* Buttons  Downloaden en favorieten */
+.buttonVerhaal {
+	display: flex;
+	justify-content: space-around;
+  width: 10em;
+  position: absolute;
+  right: 10em;
+  top: 10em;
+}
+
+.buttonVerhaal a img{
+	width: 2em;
+	height: 2em;
+}
+
+@media only screen and (max-width: 40em){
+
+  img[src="images/Desktop.png"]{
+    display: none;
+  }
+
+  img[src="images/Tablet.png"]{
+    width: 100%;
+    }
+}
+
+/* Breakpoint 2 Tablet/Desktop */
+@media only screen and (min-width: 40em){
+
+    img[src="images/Tablet.png"]{
+        display:none;
+    }
+
+    img[src="images/Desktop.png"]{
+        width: 100%;
+    }
+}
+
+/* Breakpoint 1 Mobiel */
+/* @media only screen and (max-width: 30em) {
+  .verhaal img[src="images/Desktop.png"]{
+    display: none;
+  }
+
+  .verhaal img[src="images/Tablet.png"]{
+    display: none;
+  }
+
+  .verhaal img[src="images/Mobiel.png"]{
+    width: 100%;
+    }
+} */
+
+/* Breakpoint 2 Tablet */
+/* @media only screen and (min-width: 30em) {
+
+  .verhaal img[src="images/Desktop.png"]{
+    display: none;
+  }
+
+  .verhaal img[src="images/Mobiel.png"]{
+    display: none;
+  }
+
+  .verhaal img[src="images/Tablet.png"]{
+    width: 100%;
+    }
+} */
+
+
+
+/* Breakpoint 3 Desktop */
+/* @media only screen and (min-width: 60em) {
+
+  .verhaal img[src="images/Tablet.png"]{
+    display: none;
+  }
+
+  .verhaal img[src="images/Mobiel.png"]{
+    display: none;
+    }
+
+  .verhaal img[src="images/Tablet.png"]{
+      width: 100%;
+    }
+} */
